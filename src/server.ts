@@ -1,6 +1,6 @@
 import 'dotenv/config' // Load .env variables
 import express, { Express, Request, Response, NextFunction } from 'express'
-// import favicon from 'serve-favicon'  // TODO: Add Favicon to /public/favicon.ico and Activate middleware below
+import favicon from 'serve-favicon'
 import compression from 'compression'
 import cors from 'cors'
 import bodyParser from 'body-parser' // Parsing body of incoming requests
@@ -17,7 +17,7 @@ const app: Express = express() // INITIALIZE EXPRESS APP HERE
 // ***********************************************************
 
 // Returns a middleware to serve favicon
-// app.use(favicon(path.join(__dirname, config.app.public_dir, '/favicon.ico')))
+app.use(favicon(path.join(__dirname, config.app.public_dir, '/favicon.ico')))
 
 // MORGAN REQUEST LOGGING:
 app.use(
