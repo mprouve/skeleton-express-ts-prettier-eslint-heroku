@@ -3,6 +3,9 @@ node_modules
 *.log
 *.gz
 
+#logs
+logs
+
 # .env
 # .env  <-- UNCOMMENT UPON CLONING
 
