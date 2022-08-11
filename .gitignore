@@ -8,7 +8,8 @@ node_modules
 logs
 
 # .env
-# .env  <-- UNCOMMENT UPON CLONING
+# *.env  <-- UNCOMMENT UPON CLONING
+# .env   <-- UNCOMMENT UPON CLONING
 
 # Coveralls
 .nyc_output
